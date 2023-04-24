@@ -177,6 +177,20 @@ int sobre()//inicio da variavel sobre , sobre a EBAC
 	//fim do desenho
 		system("pause");//pausa tela	
 }//fim da variavel
+int alguns(){
+	printf("Cursos mais populares da ebac\n"
+	"\nProfissão Interior Designer. Design. ...\n"
+	"\nProfissão Designer Gráfico. Design. ..."
+	"\nProfissão Analista de Dados. Programação & Data. ...\n"
+	"\nProfissão UX/UI designer. Design. ..."
+	"\nProfissão Desenvolvedor Full Stack Python. Programação & Data. ...\n"
+	"\nProfissão Social Media Manager. ...\n"
+	"\nPersonal Stylist. ...\n"
+	"\nProfissão Marketing de Performance.\n"
+	"\nvenha fazer parte da nossa familia para saber mais entre na opção sobre no menu\n");
+	
+	system("pause");
+}
 int sair()//inicio da variavel sair
 {
 	printf("digite qualquer tecla para finalizar programa!\n\n");//digite qualquer tecla para finalizar programa
@@ -215,7 +229,8 @@ setlocale(LC_ALL, "portuguese");//tipo de linguagem
 	printf("\t2-consultar nomes:\n\n");
 	printf("\t3-deletar nomes:\n\n");
 	printf("\t4-para saber mais sobre nós:\n\n");
-	printf("\t5-fechar programa:\n\n");
+	printf("\t5-mais alguns cursos populares da EBAC:\n\n");
+	printf("\t6-fechar programa:\n\n");
 	printf("opção:");
 //fim do menu de escolha	
 		scanf("%d", &opcao);//armazena o que foi digitado pelo usuario o levando para uma das opçoes do menu
@@ -242,6 +257,10 @@ setlocale(LC_ALL, "portuguese");//tipo de linguagem
 		break;//quebra de linha fecha a case 4
 	
 	 case 5:
+	alguns();
+	    break;
+	
+	 case 6:
 	sair();//encerra o programa
 		break;//quebra de linha fecha a case 5 
 	
